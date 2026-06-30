@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Girls Fashion Store</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{scroll-behavior:smooth}
+
+/* NAVBAR */
+.navbar{G
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* SLIDER */
+.slider{height:80vh;overflow:hidden;}
+.slides{display:flex;width:300%;animation:slide 12s infinite;}
+.slide img{width:100%;height:80vh;object-fit:cover;}
+
+@keyframes slide{
+0%{transform:translateX(0);}
+33%{transform:translateX(-100%);}
+66%{transform:translateX(-200%);}
+}
+
+/* SECTIONS */
+.section{padding:50px;text-align:center;}
+.categories, .products{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;
+}
+
+/* CATEGORY */
+.category img{width:100%;height:200px;border-radius:10px;}
+.category{background:#ffe5ec;padding:10px;border-radius:10px;}
+
+/* PRODUCTS */
+.product img{width:100%;height:200px;border-radius:10px;}
+.product{border:1px solid #ddd;padding:10px;border-radius:10px;}
+
+/* FEATURES */
+.features{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.feature{background:#fff0f3;padding:20px;border-radius:10px;width:200px;}
+
+/* FOOTER */
+.footer{background:#222;color:#fff;text-align:center;padding:20px;}
+
+/* SCROLL BTN */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+<!-- SLIDER -->
+<div class="slider">
+<div class="slides">
+<div class="slide">
+<img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg">
+</div>
+<div class="slide">
+<img src="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+</div>
+<div class="slide">
+<img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg">
+</div>
+</div>
+</div>
+
+<!-- CATEGORY -->
+<div class="section">
+<h2>Shop by Category</h2>
+<div class="categories">
+
+<div class="category">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+<h4>Jackets</h4>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<h4>Handbags</h4>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<h4>Heels</h4>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg">
+<h4>Shoes</h4>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/934063/pexels-photo-934063.jpeg">
+<h4>Purse</h4>
+</div>
+
+<div class="category">
+<img src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg">
+<h4>Accessories</h4>
+</div>
+
+</div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="section">
+<h2>Latest Products</h2>
+<div class="products">
+
+<div class="product">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+<h4>Winter Jacket</h4>
+<p>₹1999</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<h4>Party Heels</h4>
+<p>₹1499</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<h4>Stylish Handbag</h4>
+<p>₹1299</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg">
+<h4>Jewelry Set</h4>
+<p>₹599</p>
+</div>
+
+</div>
+</div>
+
+<!-- FEATURES -->
+<div class="section">
+<h2>Our Features</h2>
+<div class="features">
+<div class="feature">Free Shipping</div>
+<div class="feature">Easy Returns</div>
+<div class="feature">Secure Payment</div>
+<div class="feature">24/7 Support</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop - Girls Store</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR (SAME) */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* LAYOUT */
+.container{
+display:flex;
+padding:20px;
+gap:20px;
+}
+
+/* SIDEBAR FILTER */
+.sidebar{
+width:250px;
+background:#ffe5ec;
+padding:20px;
+border-radius:10px;
+}
+
+.sidebar h3{
+margin-bottom:10px;
+}
+
+.sidebar label{
+display:block;
+margin:5px 0;
+cursor:pointer;
+}
+
+/* PRODUCTS */
+.products{
+flex:1;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.product{
+border:1px solid #ddd;
+border-radius:10px;
+padding:10px;
+text-align:center;
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.product h4{margin:10px 0;}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;margin-top:30px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.container{flex-direction:column;}
+.sidebar{width:100%;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h3>Category</h3>
+<label><input type="radio" name="category" value="all" checked> All</label>
+<label><input type="radio" name="category" value="jacket"> Jackets</label>
+<label><input type="radio" name="category" value="heels"> Heels</label>
+<label><input type="radio" name="category" value="bag"> Handbags</label>
+<label><input type="radio" name="category" value="accessories"> Accessories</label>
+
+<h3 style="margin-top:15px;">Price</h3>
+<input type="range" id="priceRange" min="500" max="3000" value="3000">
+<p>Max Price: ₹<span id="priceValue">3000</span></p>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products" id="productList">
+
+<div class="product" data-category="jacket" data-price="1999">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+<h4>Winter Jacket</h4>
+<p>₹1999</p>
+</div>
+
+<div class="product" data-category="heels" data-price="1499">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<h4>Party Heels</h4>
+<p>₹1499</p>
+</div>
+
+<div class="product" data-category="bag" data-price="1299">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<h4>Stylish Handbag</h4>
+<p>₹1299</p>
+</div>
+
+<div class="product" data-category="accessories" data-price="599">
+<img src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg">
+<h4>Jewelry Set</h4>
+<p>₹599</p>
+</div>
+
+<div class="product" data-category="heels" data-price="2200">
+<img src="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+<h4>Designer Heels</h4>
+<p>₹2200</p>
+</div>
+
+<div class="product" data-category="jacket" data-price="2500">
+<img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg">
+<h4>Leather Jacket</h4>
+<p>₹2500</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL BUTTON -->
+<button id="topBtn">↑</button>
+
+<script>
+// FILTER LOGIC
+let radios = document.querySelectorAll("input[name='category']");
+let products = document.querySelectorAll(".product");
+let priceRange = document.getElementById("priceRange");
+let priceValue = document.getElementById("priceValue");
+
+function filterProducts(){
+let selected = document.querySelector("input[name='category']:checked").value;
+let maxPrice = priceRange.value;
+
+products.forEach(p=>{
+let cat = p.getAttribute("data-category");
+let price = p.getAttribute("data-price");
+
+if((selected=="all" || cat==selected) && price <= maxPrice){
+p.style.display="block";
+}else{
+p.style.display="none";
+}
+});
+}
+
+// EVENT LISTENERS
+radios.forEach(r=>r.addEventListener("change", filterProducts));
+priceRange.addEventListener("input", ()=>{
+priceValue.innerText = priceRange.value;
+filterProducts();
+});
+
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* PRODUCT SECTION */
+.product-container{
+display:flex;
+gap:30px;
+padding:40px;
+flex-wrap:wrap;
+}
+
+/* IMAGES */
+.product-images{
+flex:1;
+}
+
+.product-images img{
+width:100%;
+max-width:400px;
+border-radius:10px;
+}
+
+.thumbnail{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.thumbnail img{
+width:80px;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* DETAILS */
+.product-details{
+flex:1;
+}
+
+.product-details h2{
+margin-bottom:10px;
+}
+
+.price{
+color:#ff4d6d;
+font-size:22px;
+margin:10px 0;
+}
+
+.rating{
+color:gold;
+margin:10px 0;
+}
+
+button{
+background:#ff4d6d;
+color:#fff;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* RELATED PRODUCTS */
+.related{
+padding:40px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.product{
+border:1px solid #ddd;
+padding:10px;
+border-radius:10px;
+text-align:center;
+}
+
+.product img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.product-container{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+<!-- PRODUCT DETAILS -->
+<div class="product-container">
+
+<!-- IMAGES -->
+<div class="product-images">
+<img id="mainImage" src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+
+<div class="thumbnail">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg" onclick="changeImage(this)">
+<img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg" onclick="changeImage(this)">
+<img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" onclick="changeImage(this)">
+</div>
+</div>
+
+<!-- DETAILS -->
+<div class="product-details">
+<h2>Winter Jacket</h2>
+
+<div class="rating">★★★★★ (4.5/5)</div>
+
+<p class="price">₹1999</p>
+
+<p>
+Stay warm and stylish with this premium winter jacket. Designed with high-quality fabric,
+perfect for daily wear and special occasions.
+</p>
+
+<br>
+<button onclick="addToCart()">Add to Cart</button>
+
+</div>
+
+</div>
+
+<!-- RELATED PRODUCTS -->
+<div class="related">
+<h2>Related Products</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<h4>Party Heels</h4>
+<p>₹1499</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<h4>Handbag</h4>
+<p>₹1299</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg">
+<h4>Accessories</h4>
+<p>₹599</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+<h4>Designer Heels</h4>
+<p>₹2200</p>
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+
+// IMAGE CHANGE
+function changeImage(img){
+document.getElementById("mainImage").src = img.src;
+}
+
+// ADD TO CART
+function addToCart(){
+alert("Product added to cart!");
+}
+
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart - Girls Store</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* CART */
+.cart-container{
+padding:30px;
+}
+
+.cart-item{
+display:flex;
+align-items:center;
+gap:20px;
+border-bottom:1px solid #ddd;
+padding:15px 0;
+flex-wrap:wrap;
+}
+
+.cart-item img{
+width:100px;
+height:100px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.cart-details{
+flex:1;
+}
+
+.cart-details h4{
+margin-bottom:5px;
+}
+
+.price{
+color:#ff4d6d;
+font-weight:bold;
+}
+
+/* QUANTITY */
+.quantity{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.quantity button{
+padding:5px 10px;
+border:none;
+background:#ff4d6d;
+color:#fff;
+cursor:pointer;
+}
+
+.total-section{
+text-align:right;
+margin-top:20px;
+}
+
+.total-section h2{
+color:#ff4d6d;
+}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;margin-top:30px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.cart-item{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</div>
+
+<!-- CART -->
+<div class="cart-container">
+
+<!-- ITEM 1 -->
+<div class="cart-item" data-price="1999">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+<div class="cart-details">
+<h4>Winter Jacket</h4>
+<p class="price">₹1999</p>
+</div>
+
+<div class="quantity">
+<button onclick="changeQty(this,-1)">-</button>
+<span class="qty">1</span>
+<button onclick="changeQty(this,1)">+</button>
+</div>
+
+<div class="item-total">₹1999</div>
+</div>
+
+<!-- ITEM 2 -->
+<div class="cart-item" data-price="1499">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<div class="cart-details">
+<h4>Party Heels</h4>
+<p class="price">₹1499</p>
+</div>
+
+<div class="quantity">
+<button onclick="changeQty(this,-1)">-</button>
+<span class="qty">1</span>
+<button onclick="changeQty(this,1)">+</button>
+</div>
+
+<div class="item-total">₹1499</div>
+</div>
+
+<!-- ITEM 3 -->
+<div class="cart-item" data-price="1299">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<div class="cart-details">
+<h4>Handbag</h4>
+<p class="price">₹1299</p>
+</div>
+
+<div class="quantity">
+<button onclick="changeQty(this,-1)">-</button>
+<span class="qty">1</span>
+<button onclick="changeQty(this,1)">+</button>
+</div>
+
+<div class="item-total">₹1299</div>
+</div>
+
+<!-- TOTAL -->
+<div class="total-section">
+<h2>Total: ₹<span id="grandTotal">4797</span></h2>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+
+// UPDATE TOTAL
+function updateTotal(){
+let total = 4797;
+document.querySelectorAll(".cart-item").forEach(item=>{
+let price = item.getAttribute("data-price");
+let qty = item.querySelector(".qty").innerText;
+let itemTotal = price * qty;
+item.querySelector(".item-total").innerText = "₹" + itemTotal;
+total += itemTotal;
+});
+document.getElementById("grandTotal").innerText = total;
+}
+
+// CHANGE QTY
+function changeQty(btn, change){
+let qtyElement = btn.parentElement.querySelector(".qty");
+let qty = parseInt(qtyElement.innerText);
+
+qty += change;
+if(qty < 1) qty = 1;
+
+qtyElement.innerText = qty;
+updateTotal();
+}
+
+// INITIAL LOAD
+updateTotal();
+
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Girls Store</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* LAYOUT */
+.checkout-container{
+display:flex;
+gap:30px;
+padding:30px;
+flex-wrap:wrap;
+}
+
+/* ORDER SUMMARY */
+.summary{
+flex:1;
+background:#ffe5ec;
+padding:20px;
+border-radius:10px;
+}
+
+.summary h2{margin-bottom:15px;}
+
+.summary-item{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:15px;
+}
+
+.summary-item img{
+width:70px;height:70px;
+border-radius:10px;
+object-fit:cover;
+}
+
+.summary-item h4{margin-bottom:5px;}
+
+/* FORM */
+.form-section{
+flex:1;
+}
+
+.form-section h2{margin-bottom:15px;}
+
+form input, form textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#ff4d6d;
+color:#fff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* TOTAL */
+.total{
+margin-top:10px;
+font-size:18px;
+font-weight:bold;
+color:#ff4d6d;
+}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;margin-top:30px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.checkout-container{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</div>
+
+<div class="checkout-container">
+
+<!-- ORDER SUMMARY -->
+<div class="summary">
+<h2>Order Summary</h2>
+
+<div class="summary-item">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+<div>
+<h4>Winter Jacket</h4>
+<p>₹1999</p>
+</div>
+</div>
+
+<div class="summary-item">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<div>
+<h4>Party Heels</h4>
+<p>₹1499</p>
+</div>
+</div>
+
+<div class="summary-item">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<div>
+<h4>Handbag</h4>
+<p>₹1299</p>
+</div>
+</div>
+
+<div class="total">
+Total: ₹4797
+</div>
+
+</div>
+
+<!-- SHIPPING FORM -->
+<div class="form-section">
+<h2>Shipping Information</h2>
+
+<form onsubmit="placeOrder(event)">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Phone Number" required>
+<input type="text" placeholder="Address" required>
+<input type="text" placeholder="City" required>
+<input type="text" placeholder="State" required>
+<input type="text" placeholder="ZIP Code" required>
+
+<button type="submit">Place Order</button>
+</form>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+
+// PLACE ORDER
+function placeOrder(e){
+e.preventDefault();
+alert("Order placed successfully!");
+}
+
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Confirmation</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* CONFIRMATION */
+.confirmation{
+text-align:center;
+padding:40px;
+}
+
+.confirmation h1{
+color:#28a745;
+margin-bottom:10px;
+}
+
+.order-box{
+background:#ffe5ec;
+padding:20px;
+border-radius:10px;
+margin:20px auto;
+max-width:500px;
+}
+
+/* ITEMS */
+.item{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:10px;
+}
+
+.item img{
+width:60px;height:60px;
+border-radius:10px;
+object-fit:cover;
+}
+
+/* BUTTON */
+button{
+margin-top:20px;
+padding:10px 20px;
+background:#ff4d6d;
+color:#fff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;margin-top:30px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</div>
+
+<!-- CONFIRMATION -->
+<div class="confirmation">
+
+<h1>✅ Order Placed Successfully!</h1>
+<p>Thank you for shopping with us 💖</p>
+
+<h3>Your Order Number: <span id="orderNo"></span></h3>
+
+<div class="order-box">
+
+<h3>Order Summary</h3>
+
+<div class="item">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+<p>Winter Jacket - ₹1999</p>
+</div>
+
+<div class="item">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<p>Party Heels - ₹1499</p>
+</div>
+
+<div class="item">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<p>Handbag - ₹1299</p>
+</div>
+
+<hr style="margin:10px 0;">
+
+<h3>Total: ₹4797</h3>
+
+</div>
+
+<button onclick="goHome()">Continue Shopping</button>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+
+// GENERATE ORDER NUMBER
+document.getElementById("orderNo").innerText =
+"GS" + Math.floor(Math.random() * 1000000);
+
+// GO HOME
+function goHome(){
+window.location.href = "index.html";
+}
+
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Girls Store</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* ABOUT SECTION */
+.about{
+display:flex;
+gap:30px;
+padding:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.about img{
+width:100%;
+max-width:400px;
+border-radius:10px;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+margin-bottom:10px;
+color:#ff4d6d;
+}
+
+/* FEATURES */
+.features{
+padding:40px;
+text-align:center;
+background:#ffe5ec;
+}
+
+.feature-box{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:20px;
+}
+
+.feature{
+background:#fff;
+padding:20px;
+border-radius:10px;
+width:200px;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+padding:40px;
+text-align:center;
+}
+
+.testimonial-box{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:20px;
+}
+
+.testimonial{
+border:1px solid #ddd;
+padding:20px;
+border-radius:10px;
+width:250px;
+}
+
+.testimonial img{
+width:70px;height:70px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.about{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+<img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg">
+
+<div class="about-text">
+<h2>About Our Store</h2>
+<p>
+Welcome to Girls Store – your one-stop destination for trendy fashion.
+We offer a wide range of products including jackets, handbags, heels,
+shoes, purses, and accessories designed to make you look stylish and confident.
+</p>
+<br>
+<p>
+Our mission is to provide high-quality fashion at affordable prices while
+ensuring customer satisfaction and a seamless shopping experience.
+</p>
+</div>
+</div>
+
+<!-- FEATURES -->
+<div class="features">
+<h2>Why Choose Us</h2>
+
+<div class="feature-box">
+<div class="feature">🚚 Free Shipping</div>
+<div class="feature">🔄 Easy Returns</div>
+<div class="feature">🔒 Secure Payment</div>
+<div class="feature">📞 24/7 Support</div>
+</div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="testimonials">
+<h2>What Our Customers Say</h2>
+
+<div class="testimonial-box">
+
+<div class="testimonial">
+<img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg">
+<p>"Amazing quality and fast delivery. Loved the products!"</p>
+<h4>- Aisha</h4>
+</div>
+
+<div class="testimonial">
+<img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg">
+<p>"Stylish collection at affordable prices. Highly recommended!"</p>
+<h4>- wajeeha</h4>
+</div>
+
+<div class="testimonial">
+<img src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg">
+<p>"Customer support is very helpful. Great shopping experience!"</p>
+<h4>- Neha</h4>
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Girls Store</title>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* CONTACT */
+.contact-container{
+display:flex;
+gap:30px;
+padding:40px;
+flex-wrap:wrap;
+}
+
+.contact-info{
+flex:1;
+}
+
+.contact-info img{
+width:100%;
+max-width:400px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.contact-form{
+flex:1;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin-bottom:5px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.error{
+color:red;
+font-size:12px;
+margin-bottom:10px;
+}
+
+button{
+padding:12px;
+width:100%;
+background:#ff4d6d;
+color:#fff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.contact-container{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-container">
+
+<!-- INFO -->
+<div class="contact-info">
+<img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg">
+
+<h2>Contact Info</h2>
+<p>📍 Roorkee, Uttarakhand, India</p>
+<p>📞 +91 98765 43210</p>
+<p>📧 support@girlsstore.com</p>
+</div>
+
+<!-- FORM -->
+<div class="contact-form">
+<h2>Send Message</h2>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Your Name">
+<div class="error" id="nameError"></div>
+
+<input type="email" id="email" placeholder="Your Email">
+<div class="error" id="emailError"></div>
+
+<textarea id="message" rows="5" placeholder="Your Message"></textarea>
+<div class="error" id="messageError"></div>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+
+// ===== PURE JAVASCRIPT VALIDATION =====
+function validateJS(){
+let valid = true;
+
+// NAME
+let name = document.getElementById("name").value.trim();
+if(name === ""){
+document.getElementById("nameError").innerText = "Name is required";
+valid = false;
+}else{
+document.getElementById("nameError").innerText = "";
+}
+
+// EMAIL
+let email = document.getElementById("email").value.trim();
+let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+if(email === ""){
+document.getElementById("emailError").innerText = "Email is required";
+valid = false;
+}else if(!emailPattern.test(email)){
+document.getElementById("emailError").innerText = "Invalid email";
+valid = false;
+}else{
+document.getElementById("emailError").innerText = "";
+}
+
+// MESSAGE
+let message = document.getElementById("message").value.trim();
+if(message === ""){
+document.getElementById("messageError").innerText = "Message is required";
+valid = false;
+}else{
+document.getElementById("messageError").innerText = "";
+}
+
+return valid;
+}
+
+// ===== jQuery VALIDATION =====
+$(document).ready(function(){
+
+// REAL-TIME VALIDATION
+$("#name").keyup(function(){
+if($(this).val().trim() === ""){
+$("#nameError").text("Name is required");
+}else{
+$("#nameError").text("");
+}
+});
+
+$("#email").keyup(function(){
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+if($(this).val().trim() === ""){
+$("#emailError").text("Email is required");
+}else if(!pattern.test($(this).val())){
+$("#emailError").text("Invalid email");
+}else{
+$("#emailError").text("");
+}
+});
+
+$("#message").keyup(function(){
+if($(this).val().trim() === ""){
+$("#messageError").text("Message is required");
+}else{
+$("#messageError").text("");
+}
+});
+
+// SUBMIT
+$("#contactForm").submit(function(e){
+e.preventDefault();
+
+if(validateJS()){
+alert("Message sent successfully!");
+$("#contactForm")[0].reset();
+}
+});
+
+});
+
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search - Girls Store</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+body{background:#fff;}
+
+/* NAVBAR */
+.navbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#ff4d6d;color:#fff;
+position:sticky;top:0;
+}
+.navbar ul{display:flex;gap:20px;list-style:none;}
+.navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+
+/* SEARCH BAR */
+.search-box{
+padding:30px;
+text-align:center;
+}
+
+.search-box input{
+width:60%;
+padding:12px;
+border:2px solid #ff4d6d;
+border-radius:25px;
+outline:none;
+}
+
+/* PRODUCTS */
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.product{
+border:1px solid #ddd;
+border-radius:10px;
+padding:10px;
+text-align:center;
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.product h4{margin:10px 0;}
+
+.no-result{
+text-align:center;
+padding:20px;
+color:#888;
+}
+
+/* FOOTER */
+.footer{
+background:#222;color:#fff;text-align:center;padding:20px;margin-top:20px;
+}
+
+/* SCROLL */
+#topBtn{
+position:fixed;bottom:20px;right:20px;
+background:#ff4d6d;color:#fff;border:none;
+padding:10px;border-radius:50%;display:none;cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.search-box input{width:90%;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>Girls Store</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="search.html">Search</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</div>
+
+<!-- SEARCH -->
+<div class="search-box">
+<h2>Search Products</h2>
+<input type="text" id="searchInput" placeholder="Search for products..." onkeyup="searchProduct()">
+</div>
+
+<!-- PRODUCTS -->
+<div class="products" id="productList">
+
+<div class="product">
+<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg">
+<h4>Winter Jacket</h4>
+<p>₹1999</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg">
+<h4>Party Heels</h4>
+<p>₹1499</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg">
+<h4>Stylish Handbag</h4>
+<p>₹1299</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg">
+<h4>Jewelry Accessories</h4>
+<p>₹599</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+<h4>Designer Heels</h4>
+<p>₹2200</p>
+</div>
+
+<div class="product">
+<img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg">
+<h4>Leather Jacket</h4>
+<p>₹2500</p>
+</div>
+
+</div>
+
+<p class="no-result" id="noResult" style="display:none;">No products found</p>
+
+<!-- FOOTER -->
+<div class="footer">
+<p>© 2026 Girls Store | All Rights Reserved</p>
+</div>
+
+<!-- SCROLL -->
+<button id="topBtn">↑</button>
+
+<script>
+
+// SEARCH FUNCTION
+function searchProduct(){
+let input = document.getElementById("searchInput").value.toLowerCase();
+let products = document.querySelectorAll(".product");
+let found = false;
+
+products.forEach(product=>{
+let text = product.innerText.toLowerCase();
+
+if(text.includes(input)){
+product.style.display = "block";
+found = true;
+}else{
+product.style.display = "none";
+}
+});
+
+document.getElementById("noResult").style.display = found ? "none" : "block";
+}
+
+// SCROLL BUTTON
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function(){
+if(document.documentElement.scrollTop>200){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick = function(){
+window.scrollTo({top:0,behavior:"smooth"});
+};
+
+</script>
+
+</body>
+</html>
